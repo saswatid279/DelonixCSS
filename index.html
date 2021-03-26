@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="delonix.css">
+    <title>Delonix CSS</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="navbar-h">Delonix CSS</h2>
+    </nav>
+    <div class="side-nav">
+        <h3 class="sidenav-h"><a class="sidenavheader-a" href="#importcss">Getting started</a></h3>
+        <h3 class="sidenav-h">Components</h3>
+        <a class="sidenav-a" href="#avatar">Avatar</a>
+        <a class="sidenav-a" href="#alert">Alert</a>
+        <a class="sidenav-a" href="#badges">Badges</a>
+        <a class="sidenav-a" href="#button">Button</a>
+        <a class="sidenav-a" href="#cards">Cards</a>
+        <a class="sidenav-a" href="#image">Image</a>
+        <a class="sidenav-a" href="#input">Input</a>
+        <a class="sidenav-a" href="#list">List</a>
+        <a class="sidenav-a" href="#navigation">Navigation</a>
+        <a class="sidenav-a" href="#modal">Modal</a>
+        <a class="sidenav-a" href="#rating">Rating</a>
+        <a class="sidenav-a" href="#grid">Simplified Grid</a>
+        <a class="sidenav-a" href="#text">Text Utilities</a>
+        <a class="sidenav-a" href="#toast">Toast</a>  
+    </div>
+    <!-- import css -->
+    <section id="importcss">
+        <div class="content">
+            <h2>Include in your HTML</h2>
+            <p class="content-p">Link these files in your HTML file to use the CSS components</p>
+            <div class="spaced-container">
+                <p class="code">&ltlink rel="stylesheet" href="https://delonix.netlify.app/delonix.css"&gt</p>
+                <p class="code">&ltscript src="https://delonix.netlify.app/delonix.js"&gt&lt/script&gt</p>
+            </div>
+        </div>
+    </section>
+    <!-- avatar -->
+    <section id="avatar">
+    <div class="content" >
+        <h2>Avatar</h2>
+        <p class="content-p">Avatars are images used as profile pictures in role-playing game or blog. Create your own avatar with CSS</p>
+        <div class="container">
+            <img class="avatar" src="image/avatar1.jpg">
+            <img class="avatar-small" src="image/avatar2.jpg">
+            <img class="avatar-xs" src="image/avatar3.jpg">
+        </div>
+        <h4>Add HTML</h4>
+        <div class="iframe-container">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522image%252Favatar1.jpg%2522%253E%250A%253Cimg%2520class%253D%2522avatar-small%2522%2520src%253D%2522image%252Favatar2.jpg%2522%253E%250A%253Cimg%2520class%253D%2522avatar-xs%2522%2520src%253D%2522image%252Favatar3.jpg%2522%253E"
+            style="width: 680px; height: 130px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+          </iframe>
+    </div>
+    <hr/>
+    </div>
+    </section>  
+    
+    <!-- alert -->
+    <section id="alert">
+    <div class="content">
+        <h2>Alert</h2>
+        <p class="content-p">Alerts are used to display success,warning, error messages,etc. Create different types of alerts with CSS</p>
+        <div class="container">
+            <div class="alert success">
+                An alert Component-Success
+                <span class="alert-btn" onclick="this.parentElement.style.display='none';">X</span>
+            </div>
+            <div class="alert warning">
+                An alert Component-Warning
+                <span class="alert-btn" onclick="this.parentElement.style.display='none';" >X</span>
+            </div>
+            <div class="alert info">
+                An alert Component-Info
+                <span class="alert-btn" onclick="this.parentElement.style.display='none';">X</span>
+            </div>
+            <div class="alert danger">
+                An alert Component-Danger
+                <span class="alert-btn" onclick="this.parentElement.style.display='none';"s>X</span>
+            </div>
+        </div>
+        <h4>Add HTML</h4>
+        <p class="content-p">When you click the button on the right hand side,the alert message disappears.</p>
+        <div class="iframe-container">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520success%2522%253E%250A%2520An%2520alert%2520Component-Success%250A%2520%253Cspan%2520class%253D%2522alert-btn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%253B%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520warning%2522%253E%250A%2520An%2520alert%2520Component-Warning%250A%2520%253Cspan%2520class%253D%2522alert-btn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%253B%2522%2520%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520info%2522%253E%250A%2520An%2520alert%2520Component-Info%250A%2520%253Cspan%2520class%253D%2522alert-btn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%253B%2522%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520danger%2522%253E%250A%2520An%2520alert%2520Component-Danger%250A%2520%253Cspan%2520class%253D%2522alert-btn%2522%2520onclick%253D%2522this.parentElement.style.display%253D%27none%27%253B%2522s%253EX%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+            style="width: 680px; height: 442px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <hr/>
+    </div>
+</section>
+<!-- badges -->
+<section id="badges">
+    <div class="content">
+        <h2>Badge on Avatar</h2>
+        <p  class="content-p">Badges are used as a part of buttons,links,avatars,etc to highlight it or notify user about the notifications.</p>
+        <div class="badge-container">
+        <img class="avatar" src="image/avatar2.jpg">
+        <span class="badge">3</span>
+        </div>
+        
+        <h2>Badge on icons</h2>
+        <div class="badge-container">
+        <img class="badge-icon" src="icons/twitter.png">
+        <span class="badge">3</span>
+        </div>
+
+        <h4>Add HTML</h4>
+        <div class="iframe-container">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522avatar%2522%2520src%253D%2522image%252Favatar2.jpg%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge%2522%253E3%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522badge-container%2522%253E%250A%2520%253Cimg%2520class%253D%2522badge-icon%2522%2520src%253D%2522icons%252Ftwitter.png%2522%253E%250A%2520%253Cspan%2520class%253D%2522badge%2522%253E3%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                style="width: 680px; height: 240px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <hr/>
+    </div>
+</section>
+<!-- button -->
+<section id="button">
+    <div class="content">
+        
+            <h2>Button</h2>
+            <p class="content-p">Use the CSS classes to create different styles of buttons.</p>
+            <br><h3>Primary Button</h3>
+            <div class="container">
+            <button class="primary-btn">Primary</button>
+            <button class="primary-btn shadow">Primary</button>
+            </div>
+            
+            <h3>Link Button</h3>
+            <div class="container">
+            <a class="link-btn" href="#" target="_blank">Link button</a>
+            <a class="link-btn shadow" href="#" target="_blank">Link button</a>
+            </div>
+
+            <h3>Icon Button</h3>
+            <div class="container">
+                <button class="icon-btn">
+                    <img class="icon-img" src="icons/menu.png">
+                    <span class="icon-text">Menu</span></button>
+            </div>
+            <h3>Floating Button</h2>
+            <div class="container">
+            <button class="floating-btn">+</button>
+        </div>
+        <h4>Add HTML</h4>
+        <p class="content-p">Use the classes to apply different looks to the buttons.</p>
+        
+        <div class="iframe-container">
+            <iframe
+             src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522primary-btn%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522primary-btn%2520shadow%2522%253EPrimary%253C%252Fbutton%253E%250A%250A%253Ca%2520class%253D%2522link-btn%2522%2520href%253D%2522%2523%2522%2520target%253D%2522_blank%2522%253ELink%2520button%253C%252Fa%253E%250A%253Ca%2520class%253D%2522link-btn%2520shadow%2522%2520href%253D%2522%2523%2522%2520target%253D%2522_blank%2522%253ELink%2520button%253C%252Fa%253E%250A%250A%253Cbutton%2520class%253D%2522icon-btn%2522%253E%250A%2520%2520%253Cimg%2520class%253D%2522icon-img%2522%2520src%253D%2522icons%252Fmenu.png%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522icon-text%2522%253EMenu%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522floating-btn%2522%253E%252B%253C%252Fbutton%253E"
+             style="width: 680px; height: 295px; border:0; transform: scale(1); overflow:hidden;"
+             sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <hr/>
+    </div>
+
+</section>
+
+<!-- card -->
+<section id="cards">
+    <div class="content">
+        <h2>Cards</h2>
+        <p class="content-p"> A card is container for a few short, related pieces of information.</p>
+        <div class="card-container">
+       
+         <div class="card">
+            <img src="image/cherry.jpg" width="100%">
+            <div>
+                <h3 class="card-title">Cherry blossom</h3>
+                <p>Flower</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div>
+                <h3 class="card-title">Text only cards</h3>
+                <hr/>
+                <p class="card-message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+            </div>
+        </div>
+
+        <div class="card-badge">
+            <img src="image/cherry.jpg" width="100%">
+            <div>
+                <h3 class="card-title">Cherry blossom</h3>
+                <p>Flower</p>
+            </div>
+        </div>
+        </div>
+        <!-- horizontal card -->
+        <div class="card-container">
+            <div class="horizontal-card">
+                <div>
+                    <button class="card-btn">x</button>
+                    <h3 class="card-title">Text only cards</h3>
+                    
+                    <hr/>
+                    <p class="card-message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+                </div>
+        </div>
+        
+
+    </div>
+    <h4>Add HTML</h4>
+    <div class="iframe-container">
+        <iframe
+         src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522image%252Fcherry.jpg%2522%2520width%253D%2522100%2525%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECherry%2520blossom%253C%252Fh3%253E%250A%2520%2520%2520%2520%253Cp%253EFlower%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253EText%2520only%2520cards%253C%252Fh3%253E%250A%2520%2520%253Chr%252F%253E%250A%2520%2520%2520%253Cp%2520class%253D%2522card-message%2522%253ELorem%2520Ipsum%2520is%2520simply%2520dummy%2520text%2520of%2520%2509%2509%2509%2509%2509the%2520printing%2520and%2520typesetting%2520industry.%2520Lorem%2520Ipsum%2520has%2520been%2520%2509%2509%2509%2509the%2520industry%27s%2520standard%2520dummy%2520text%2520ever%2520since%2520the%25201500s%252C%2520%2509%2509%2509%2509%2509when%2520an%2520unknown%2520printer%2520took%2520a%2520galley%2520of%2520type%2520and%2520scrambled%2520%2509%2509%2509%2509it%2520to%2520make%2520a%2520type%2520specimen%2520book.It%2520has%2520survived%2520not%2520only%2520%2509%2509%2509%2509%2509five%2520centuries%252C%2520but%2520also%2520the%2520leap%2520into%2520electronic%2520%2509%2509%2509%2509%2509%2509%2509typesetting%252C%2520remaining%2520essentially%2520unchanged.%2520It%2520was%2520%2509%2509%2509%2509%2509%2509popularised%2520in%2520the%25201960s%2520with%2520the%2520release%2520of%2520Letraset%2520sheets%2520%2509%2509%2509%2509%2520containing%2520Lorem%2520Ipsum%2520passages%252C%2520and%2520more%2520recently%2520with%2520%2509%2509%2509%2509%2509desktop%2520publishing%2520software%2520like%2520Aldus%2520PageMaker%2520including%2520%2509%2509%2509%2509%2509versions%2520of%2520Lorem%2520Ipsum.It%2520is%2520a%2520long%2520established%2520fact%2520that%2520a%2520%2509%2509%2509%2509%2520reader%2520will%2520be%2520distracted%2520by%2520the%2520readable%2520content%2520of%2520a%2520page%2520%2509%2509%2509%2509%2520when%2520looking%2520at%2520its%2520layout.%2520%253C%252Fp%253E%250A%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522card-badge%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522image%252Fcherry.jpg%2522%2520width%253D%2522100%2525%2522%253E%250A%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253ECherry%2520blossom%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253Cp%253EFlower%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+         style="width: 680px; height: 737px; border:0; transform: scale(1); overflow:hidden;"
+         sandbox="allow-scripts allow-same-origin">
+`       </iframe>
+    </div>
+    <p class="content-p">For horizontal card add the code given below</p>
+    <div class="iframe-container">
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%250A%253Cdiv%2520class%253D%2522card-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522horizontal-card%2522%253E%250A%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-btn%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Ch3%2520class%253D%2522card-title%2522%253EText%2520only%2520cards%253C%252Fh3%253E%250A%2509%253Chr%252F%253E%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522card-message%2522%253ELorem%2520Ipsum%2520is%2520simply%2520dummy%2520text%2520of%2520the%2520printing%2520%2509%2520%2520and%2520typesetting%2520industry.%2520Lorem%2520Ipsum%2520has%2520been%2520the%2520industry%27s%2520%2509%2509%2509%2520standard%2520dummy%2520text%2520ever%2520since%2520the%25201500s%252C%2520when%2520an%2520unknown%2520printer%2520took%2520%2509%2520a%2520galley%2520of%2520type%2520and%2520scrambled%2520it%2520to%2520make%2520a%2520type%2520specimen%2520book.It%2520has%2520%2509%2509%2520survived%2520not%2520only%2520five%2520centuries%252C%2520but%2520also%2520the%2520leap%2520into%2520electronic%2520%2509%2509%2520typesetting%252C%2520remaining%2520essentially%2520unchanged.%2520It%2520was%2520popularised%2520in%2520the%2520%2509%2520%25201960s%2520with%2520the%2520release%2520of%2520Letraset%2520sheets%2520containing%2520Lorem%2520Ipsum%2520%2509%2509%2509%2520passages%252C%2520and%2520more%2520recently%2520with%2520desktop%2520publishing%2520software%2520like%2520Aldus%2520%2509%2520%2520PageMaker%2520including%2520versions%2520of%2520Lorem%2520Ipsum.%253C%252Fp%253E%250A%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520"
+        style="width: 680px; height: 424px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+    </div>   
+    <hr/>
+  </div>
+</section>
+<!-- image -->
+<section id="image">
+    <div class="content">
+            <h2>Responsive Image</h2>
+            <p class="content-p">Create responsive images with CSS. Resize the browser to witness the responsive effect</p>
+            <div class="container">
+                <img class="responsive-img" src="image/cherryblossom.jpg">
+            </div>
+            <h2>Rounded Image</h2>
+            <p class="content-p">Create rounded images with CSS</p>
+            <div class="container">
+                <img class="rounded-img" src="image/rounded.webp">
+            </div>
+            <h4>Add HTML</h4>
+            <div class="iframe-container">
+                <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cimg%2520class%253D%2522responsive-img%2522%2520src%253D%2522image%252Fcherryblossom.jpg%2522%253E%250A%253Cimg%2520class%253D%2522rounded-img%2522%2520src%253D%2522image%252Frounded.jpg%2522%253E"
+                style="width: 680px; height: 111px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+              </iframe>  
+        </div>
+        <hr/>
+    </div>
+</section>
+<!-- input -->
+<section id="input">
+    <div class="content">
+        <h2>Input</h2>
+        <p class="content-p">Inputs are mainly used to collect user inputs.</p>
+        <div class="spaced-container">
+            <form>
+                <label>Name:</label>
+                <input class="textbox" type="text" placeholder="Enter your name"/>
+                <label>Email:</label>
+                <input class="textbox" type="text" placeholder="Enter your Mail-id"/>
+                <label>Password:</label>
+                <input type="password" class="textbox" placeholder="Enter your Password"/>
+                <label>Address</label>
+                <textarea class="textbox"></textarea>
+            </form>
+        </div>
+        <h4>Add HTML</h4>
+        <div class="iframe-container">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cform%253E%250A%2520%2520%253Clabel%253EName%253A%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520class%253D%2522textbox%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520name%2522%252F%253E%250A%2520%2520%253Clabel%253EEmail%253A%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520class%253D%2522textbox%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Enter%2520your%2520Mail-id%2522%252F%253E%250A%2520%2520%253Clabel%253EPassword%253A%253C%252Flabel%253E%250A%2520%2520%253Cinput%2520type%253D%2522password%2522%2520class%253D%2522textbox%2522%2520placeholder%253D%2522Enter%2520your%2520Password%2522%252F%253E%250A%2520%2520%253Clabel%253EAddress%253C%252Flabel%253E%250A%2520%2520%253Ctextarea%2520class%253D%2522textbox%2522%253E%253C%252Ftextarea%253E%250A%253C%252Fform%253E"
+            style="width: 680px; height: 258px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        </div>
+        <hr/>
+    </div>
+</section>
+<!-- List -->
+<section id="list">
+    <div class="content">
+        <h2>Spaced List</h2>
+        <p class="content-p">A list consists of a set of items that belong to a particular category and are written down one below the other. </p>
+        <div class="spaced-container">
+            <ol class="list-ul">
+                <li class="list-li-spaced">Lavender</li>
+                <li class="list-li-spaced">Violet</li>
+                <li class="list-li-spaced">Cherry Blossom</li>
+            </ol>
+        </div>
+        <h2>Stacked list</h2>
+        <div class="spaced-container">
+            <ol class="list-ul" reversed>
+                <li class="list-li">Lavender</li>
+                <li class="list-li">Violet</li>
+                <li class="list-li">Cherry Blossom</li>
+            </ol>
+        </div>
+        <h4>Add HTML</h4>
+        <div class="iframe-container">
+            <iframe
+             src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Col%2520class%253D%2522list-ul%2522%253E%250A%2520%253Cli%2520class%253D%2522list-li-spaced%2522%253ELavender%253C%252Fli%253E%250A%2520%253Cli%2520class%253D%2522list-li-spaced%2522%253EViolet%253C%252Fli%253E%250A%2520%253Cli%2520class%253D%2522list-li-spaced%2522%253ECherry%2520Blossom%253C%252Fli%253E%250A%253C%252Fol%253E%250A%250A%252F*Stacked%2520List*%252F%250A%250A%253Col%2520class%253D%2522list-ul%2522%2520reversed%253E%250A%2520%253Cli%2520class%253D%2522list-li%2522%253ELavender%253C%252Fli%253E%250A%2520%253Cli%2520class%253D%2522list-li%2522%253EViolet%253C%252Fli%253E%250A%2520%253Cli%2520class%253D%2522list-li%2522%253ECherry%2520Blossom%253C%252Fli%253E%250A%253C%252Fol%253E"
+             style="width: 680px; height: 314px; border:0; transform: scale(1); overflow:hidden;"
+             sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <hr/>
+    </div>
+</section>
+<!-- navigation -->
+<section id="navigation">
+    <div class="content">
+        <h2>Navigation Bar</h2>
+            <p class="content-p">A navigation bar is a section of a GUI which helps the visitors in accessing information.Create Navigation bar with CSS</p>
+            <div class="container">
+            <nav class="nav-bar">
+                <ul class="navbar-ul">
+                    <li class="navbar-li"><a class="navbar-a" href="#">Home</a></li>
+                    <li class="navbar-li"><a class="navbar-a" href="#">About</a></li>
+                    <li class="navbar-li"><a class="navbar-a" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h4>Add HTML</h4>
+        <div class="iframe-container">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cnav%2520class%253D%2522nav-bar%2522%253E%250A%2520%2520%253Cul%2520class%253D%2522navbar-ul%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar-li%2522%253E%253Ca%2520class%253D%2522navbar-a%2522%2520href%253D%2522%2523%2522%253EHome%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar-li%2522%253E%253Ca%2520class%253D%2522navbar-a%2522%2520href%253D%2522%2523%2522%253EAbout%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522navbar-li%2522%253E%253Ca%2520class%253D%2522navbar-a%2522%2520href%253D%2522%2523%2522%253EContact%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%2520%253C%252Fnav%253E"
+            style="width: 680px; height: 203px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <hr/>
+    </div>
+</section>
+<!-- modal -->
+<section id="modal">
+    <div class="content">
+        <h2>Modal</h2>
+            <p class="content-p">A modal is a popup window used to display some message.</p>
+            <div class="container"> 
+                <a class="modal-btn" href="#open">Modal</a>
+                <div id="open" class="modal">
+                    <a href="#modal" class="modal-close">Close</a>
+                    <h2 class="modal-header">Modal Header</h2>
+                    <p>Lorem ipsum is a dummy text</p>
+                </div>
+            </div>
+            <h4>Add HTML</h4>
+            <div class="iframe-container">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522modal-btn%2522%2520href%253D%2522%2523open%2522%253EModal%253C%252Fa%253E%250A%2520%2520%253Cdiv%2520id%253D%2522open%2522%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523modal%2522%2520class%253D%2522modal-close%2522%253EClose%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ch2%253EModal%2520Header%253C%252Fh2%253E%250A%2520%2520%2520%2520%253Cp%253ELorem%2520ipsum%2520is%2520a%2520dummy%2520text%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E"
+            style="width: 680px; height: 185px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <hr/>
+    </div>
+</section>
+<!-- rating -->
+<section id="rating">
+    <div class="content">
+        <h2>Rating</h2>
+        <p class="content-p">Rating is used to gather comparative information through the user feedback</p>
+        <div class="container">
+        <div class="rate">
+            <input id="star5" type="radio" value="5" name="rating"/><label for="star5">☆</label>
+            <input id="star4" type="radio" value="4" name="rating"/><label for="star4">☆</label>
+            <input id="star3" type="radio" value="3" name="rating"/><label for="star3">☆</label>
+            <input id="star2" type="radio" value="2" name="rating"/><label for="star2">☆</label>
+            <input id="star1" type="radio" value="1" name="rating"/><label for="star1">☆</label>
+        </div>
+    </div>
+    <h4>Add HTML</h4>
+    <div class="iframe-container">
+        <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rate%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522star5%2522%2520type%253D%2522radio%2522%2520value%253D%25225%2522%2520name%253D%2522rating%2522%252F%253E%253Clabel%2520for%253D%2522star5%2522%253E%25E2%2598%2586%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522star4%2522%2520type%253D%2522radio%2522%2520value%253D%25224%2522%2520name%253D%2522rating%2522%252F%253E%253Clabel%2520for%253D%2522star4%2522%253E%25E2%2598%2586%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522star3%2522%2520type%253D%2522radio%2522%2520value%253D%25223%2522%2520name%253D%2522rating%2522%252F%253E%253Clabel%2520for%253D%2522star3%2522%253E%25E2%2598%2586%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522star2%2522%2520type%253D%2522radio%2522%2520value%253D%25222%2522%2520name%253D%2522rating%2522%252F%253E%253Clabel%2520for%253D%2522star2%2522%253E%25E2%2598%2586%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520id%253D%2522star1%2522%2520type%253D%2522radio%2522%2520value%253D%25221%2522%2520name%253D%2522rating%2522%252F%253E%253Clabel%2520for%253D%2522star1%2522%253E%25E2%2598%2586%253C%252Flabel%253E%250A%253C%252Fdiv%253E"
+        style="width: 680px; height: 295px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>  
+    </div>
+    <hr/>
+  </div>
+</section>
+<!--Simplified grid -->
+<section id="grid">
+    <div class="content">
+        <h2>Grids</h2>
+        <p class="content-p">Grids divide the page into regions and make it easier to design webpages.</p>
+        <br><h3>Two items in a grid</h3>
+        <div class="container">
+        <div class="grid-two">
+            <div class="grid-element">Grid1</div>
+            <div class="grid-element">Grid2</div>
+        </div></div>
+        <h3>Three items in a grid</h3>
+        <div class="container">
+        <div class="grid-three">
+            <div class="grid-element">Grid1</div>
+            <div class="grid-element">Grid2</div>
+            <div class="grid-element">Grid3</div>
+        </div></div>
+        <h4>Add HTML</h4>
+        <div class="iframe-container">
+            <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid-two%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-element%2522%253EGrid1%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-element%2522%253EGrid2%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%2520%250A%2520%253Cdiv%2520class%253D%2522grid-three%2522%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522grid-element%2522%253EGrid1%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522grid-element%2522%253EGrid2%253C%252Fdiv%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522grid-element%2522%253EGrid3%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+            style="width: 680px; height: 258px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <hr/>
+    </div>
+</section>
+<!-- text utilities -->
+<section id="text">
+    <div class="content">
+        <h2>Text Utilities</h2>
+            <p class="content-p">Text utilities are used for manipulating text alignment,styles,etc</p>
+            <br><h3>Headings</h3>
+        <div class="heading-container">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+        <h3>Center text</h3>
+        <p class="content-p">Display the text in the center</p>
+        <div class="heading-container">
+           <div class="center">The text is in center</div>
+        </div>
+         <h3>Gray text</h3> 
+         <div class="heading-container">
+             <span class="gray-text">Lorem ipsum</span>
+         </div>  
+         <h3>Small text</h3>
+         <div class="heading-container">
+             <span class="small">This is smaller text</span>
+         </div>
+            <h4>Add HTML</h4>
+            <div class="iframe-container">
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Ch1%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%253EHeading%25206%253C%252Fh6%253E%250A%250A%253Cdiv%2520class%253D%2522center%2522%253EThe%2520text%2520is%2520in%2520center%253C%252Fdiv%253E%250A%250A%253Cspan%2520class%253D%2522gray-text%2522%253ELorem%2520ipsum%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522small%2522%253EThis%2520is%2520smaller%2520text%253C%252Fspan%253E"
+                style="width: 680px; height: 295px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        </div>
+        <hr/>
+    </div>
+</section>
+<!-- Toast -->
+<section id="toast">
+    <div class="content">
+            <h2>Toast</h2>
+            <p class="content-p">Create different types of toasts with CSS</p>
+            <div class="container">
+            <button class="show-toast" onclick="showToast()">Show Toast</button>
+            <div id="toast-success">
+               <button class="btn" onclick="hideToast()">&times;</button>
+               <div class="notify-text">
+            <p class="title">Success</p>
+            <p class="message">This is a Success component</p>
+          </div>
+        </div>
+    </div>
+    <h4>Add HTML</h4>
+    <div class="iframe-container">
+      <iframe
+         src="https://carbon.now.sh/embed?bg=rgba%28155%2C155%2C155%2C1%29&t=3024-night&wt=none&l=text&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=132%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522show-toast%2522%2520onclick%253D%2522showToast%28%29%2522%253EShow%2520Toast%253C%252Fbutton%253E%250A%253Cdiv%2520id%253D%2522toast-success%2522%253E%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2522%2520onclick%253D%2522hideToast%28%29%2522%253E%2526times%253B%253C%252Fbutton%253E%250A%2520%2520%2520%253Cdiv%2520class%253D%2522notify-text%2522%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522title%2522%253ESuccess%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522message%2522%253EThis%2520is%2520a%2520Success%2520component%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+         style="width: 680px; height: 222px; border:0; transform: scale(1); overflow:hidden;"
+         sandbox="allow-scripts allow-same-origin">
+      </iframe>
+    </div>
+   </div>
+</section>
+
+<div class="footer">
+        <ul>
+            <li class="footer-li">
+                <a class="footer-a" href="https://twitter.com/Saswati75448910"><i class="fa fa-twitter" style="font-size:20px"></i>Twitter</a>
+            </li>
+            <li class="footer-li">
+                <a class="footer-a" href="https://www.linkedin.com/in/saswati-das-a85326147/"><i class="fa fa-linkedin-square" style="font-size:20px"></i>LinkedIn</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-a" href="https://github.com/saswatid279"> <i class="fa fa-github" style="font-size:20px"></i>Github</a>
+             </li>
+        </ul>
+</div>
+<script src="delonix.js"></script>
+
+</body>
+</html>
